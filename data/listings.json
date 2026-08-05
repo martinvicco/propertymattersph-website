@@ -1,0 +1,36 @@
+{
+  "listings": [
+    {
+      "title": "Modern Townhouse",
+      "location": "San Juan",
+      "status": "sale",
+      "price": "₱ — Inquire for price",
+      "description": "4BR · 3T&B · 2-car garage · Brand new. Placeholder listing — replace with actual property.",
+      "image": ""
+    },
+    {
+      "title": "House & Lot",
+      "location": "Tivoli Royale",
+      "status": "sale",
+      "price": "₱ — Inquire for price",
+      "description": "5BR · Family home in an exclusive Quezon City enclave. Placeholder listing — replace with actual property.",
+      "image": ""
+    },
+    {
+      "title": "Prime Residence",
+      "location": "White Plains",
+      "status": "lease",
+      "price": "₱ — Inquire for price",
+      "description": "Spacious lot along a premier Katipunan-area village. Placeholder listing — replace with actual property.",
+      "image": ""
+    },
+    {
+      "title": "Lot for Development",
+      "location": "Fairmount Hills",
+      "status": "sale",
+      "price": "₱ — Inquire for price",
+      "description": "Elevated lot with scenic views, ready to build. Placeholder listing — replace with actual property.",
+      "image": ""
+    }
+  ]
+}
