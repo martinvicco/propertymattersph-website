@@ -31,6 +31,14 @@
       "price": "₱ — Inquire for price",
       "description": "Elevated lot with scenic views, ready to build. Placeholder listing — replace with actual property.",
       "image": ""
+    },
+    {
+      "price": "₱ — Inquire for price",
+      "title": "Building",
+      "location": "Pasay",
+      "status": "sale",
+      "description": "Hello",
+      "image": "images/uploads/quantum-residences.jpg"
     }
   ]
 }
