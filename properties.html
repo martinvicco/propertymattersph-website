@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Properties — Property Matters PH</title>
+<meta name="description" content="Browse properties for sale and lease across Metro Manila — Property Matters PH, powered by RE/MAX.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <span class="logo-mark">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4">
+          <path d="M3 13 L9 7 L13 11 M9 20 V13 M13 20 V11 L17 7 L21 11 V20"/>
+        </svg>
+      </span>
+      <span class="brand-name">PROPERTY MATTERS PH</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="properties.html" class="current">Properties</a>
+      <a href="contact.html" class="btn btn-powder nav-cta">Inquire</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-head">
+  <div class="container">
+    <span class="script">Our Listings</span>
+    <h1>Properties</h1>
+    <p>Browse what's available for sale and lease across Metro Manila. Don't see what you're looking for? Send us an inquiry — we'll find it.</p>
+  </div>
+</div>
+
+<section id="properties" class="props" style="padding-top:56px">
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all" onclick="filterProps('all')">All</button>
+      <button class="filter-btn" data-filter="sale" onclick="filterProps('sale')">For Sale</button>
+      <button class="filter-btn" data-filter="lease" onclick="filterProps('lease')">For Lease</button>
+    </div>
+    <div class="props-grid" id="listings-grid"><!-- listings render here from data/listings.json --></div>
+    <p class="no-results" id="no-results">No listings in this category right now — send us an inquiry and we'll find one for you.</p>
+    <div class="props-cta">
+      <a href="contact.html" class="btn btn-outline">Inquire About a Property</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <a class="brand" href="index.html">
+        <span class="logo-mark">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4"><path d="M3 13 L9 7 L13 11 M9 20 V13 M13 20 V11 L17 7 L21 11 V20"/></svg>
+        </span>
+        <span class="brand-name">PROPERTY MATTERS PH</span>
+      </a>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/propertymattersph" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg></a>
+        <a href="https://www.facebook.com/propertymattersph" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3 H12 C9.8 3 8 4.8 8 7 V10 H5 V14 H8 V21 H12 V14 H15 L16 10 H12 V7.5 C12 6.7 12.7 6 13.5 6 H16 Z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Property Matters PH · Beyond Transactions, Building Trusts.</span>
+      <span>Powered by RE/MAX · Buy | Sell | Lease</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/listings.js"></script>
+</body>
+</html>
