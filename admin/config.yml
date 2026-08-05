@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+site_url: https://astonishing-crisp-20169b.netlify.app
+logo_url: https://astonishing-crisp-20169b.netlify.app/images/logo.png
+
+collections:
+  - label: "Website Content"
+    name: "content"
+    files:
+      - label: "Property Listings"
+        name: "listings"
+        file: "data/listings.json"
+        description: "Add, edit, or remove property listings. The first 3 appear on the home page."
+        fields:
+          - label: "Listings"
+            name: "listings"
+            widget: "list"
+            summary: "{{fields.location}} — {{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string", hint: "e.g. Modern Townhouse" }
+              - { label: "Location", name: "location", widget: "string", hint: "e.g. San Juan" }
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options:
+                  - { label: "For Sale", value: "sale" }
+                  - { label: "For Lease", value: "lease" }
+              - { label: "Price", name: "price", widget: "string", default: "₱ — Inquire for price", hint: "e.g. ₱25M or ₱45,000/month" }
+              - { label: "Description", name: "description", widget: "text", hint: "Bedrooms, size, highlights" }
+              - { label: "Photo", name: "image", widget: "image", required: false, hint: "Upload a photo of the property. Leave empty to show the logo placeholder." }
